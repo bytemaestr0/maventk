@@ -1,0 +1,10 @@
+{
+    "firsttime": true,
+    "default_wireless": "wlan0",
+    "nmap_stealth": true,
+    "nmap_timing": "3",
+    "proxychains_default": true,
+    "web_wordlist": "wordlists/dirb_wordlist.txt",
+    "file_extensions": ".html",
+    "listen_port": "9001"
+}
