@@ -6,7 +6,7 @@ mtk_prompt = f'''
 └$ '''
 positive_answers = ['Yes', 'yes', 'ye', 'y', 'yea', 'Y', 'yeah', 'yah'] 
 answer_choices = ['1', '2', '3', '4', '5', '6', '7', '8', '99']
-apps = ['dig', 'nmap', 'nmap_network', 'asqlmap', 'dirb', 'ncat']
+apps = ['dig', 'nmap', 'nmap_network', 'asqlmap', 'dirb', 'ncat', 'setookit']
 top_level_domains = ['.com', '.net', '.org', '.gov', '.edu', '.co', '.io', '.biz', '.ro', '.md', '.uk', '.shop']
 
 def get_config():
@@ -231,6 +231,9 @@ def use_program(app):
             os.system("clear")
             replace_value('listen_port', listen_port)
             os.system(f"netcat -lnvp {listen_port}")
+    elif app == apps[6]:
+        if check_install('setoolkit') != True:
+            pass
 def replace_value(key, value):
     full_config = get_config()
     full_config[key] = value
