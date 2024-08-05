@@ -246,6 +246,7 @@ def get_prerequisites():
     os.system(f"sudo {install} nmap sqlmap")
     # for airgeddon:
     os.system(f"sudo {install} iw awk airmon-ng xterm ip lspci ps")
+    return True
 
 def show_options(menu_name):
     print(menu_name)
