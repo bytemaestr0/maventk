@@ -107,7 +107,7 @@ def get_interface():
 
 def get_main_subnet(interface):
     try:
-        resul = subprocess.run(['ip', 'addr', 'show', interface], capture_output=True, text=True, check=True)
+        result = subprocess.run(['ip', 'addr', 'show', interface], capture_output=True, text=True, check=True)
         output = result.stdout
         
         match = re.search(r'inet (\d+\.\d+\.\d+\.\d+)/(\d+)', output)
