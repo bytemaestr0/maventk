@@ -1,5 +1,0 @@
-#!/usr/bin/bash
-
-old_dir=$(pwd)
-cd /home/elliot/pent/toolkit
-python3 mtk.py
