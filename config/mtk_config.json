@@ -1,5 +1,5 @@
 {
-    "firsttime": true,
+    "firsttime": false,
     "default_wireless": "wlan0",
     "nmap_stealth": true,
     "nmap_timing": "3",

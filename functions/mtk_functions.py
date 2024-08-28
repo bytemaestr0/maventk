@@ -171,7 +171,7 @@ def use_program(app):
                 pass
         else:
             asqlmap_url = input("Which url to scan? ")
-            os.system(f"./apps/asqlmap/asqlmap.sh {asqlmal_url}")
+            os.system(f"./apps/asqlmap/asqlmap.sh {asqlmap_url}")
     elif app == apps[4]:
         if check_install("dirb") != True:
             print("The app dirb isn't installed. Quitting")
